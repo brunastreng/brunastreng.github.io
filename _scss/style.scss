@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap');
+
+* {
+    font-family: 'Comfortaa';
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fbfbfb;
+}
+
+.pad-0{
+    padding: 0;
+}
+
+.mar-0{
+    margin: 0;
+}
+
+$primary-color: #e6aeb8;
+
+header {
+    -webkit-box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: #fff;
+
+    .home {
+        text-decoration: none;
+        font-size: 2rem;
+        color: $primary-color;
+        transition: .3s;
+        display: inline-block;
+        line-height: 1.5rem;
+
+        span{
+            color: rgba(0, 0, 0, 0.2);
+            font-size: 1.3rem;
+            transition: .3s;
+
+        }
+
+        &:hover {
+            transition: .3s;
+            transform: scale(1.1);
+            color: #282828;
+            span{
+                transition: .3s;
+
+                color: rgba(0, 0, 0, 1);
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+main{
+    margin-top: 50px;
+    h1{
+        display: inline-block;
+        color: $primary-color;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    h2{
+        display: inline-block;
+        color: $primary-color;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .item-portfolio{
+        display: inline-flex;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-bottom: 15px;
+        .link-content{
+            display: inline-block;
+            width: 100%;
+            height: 0; /* A mágica está aqui */
+            padding-bottom: 100%; /* ... e está aqui */
+            background-size: cover;
+            background-position: center center;
+            
+            overflow: hidden;
+            border-radius: 100%;
+            filter: saturate(0);
+            transition: .3s;
+            -moz-box-shadow:    inset 0 0 100px #000000;
+            -webkit-box-shadow: inset 0 0 100px #000000;
+            box-shadow:         inset 0 0 100px #000000;
+            .item-description{
+                background-color: rgba(0, 0, 0, 0.8);
+                height: 200px;
+                color: #fff;
+                font-weight: 800;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                transition: .3s;
+                
+                .row{
+                    height: inherit;
+                }
+            }
+            &:hover{
+                filter: saturate(1);
+                transform: scale(1.05);
+
+                .item-description{
+                    opacity: 0;
+                    transition: .3s;
+
+                }
+            }
+        }
+    }
+    .spacer{
+        height: 50px;
+        width: 100%;
+        display: inline-block;
+    }
+    .content-curriculum{
+        background-color: #fff;
+        margin-left: 15px;
+        margin-right: 15px;
+        display: inline-block;
+        width: calc(100% - 70px);
+        border-radius: 20px;
+        padding: 20px;
+        -webkit-box-shadow: 0px 4px 17px -6px rgba(0,0,0,0.36);
+        -moz-box-shadow: 0px 4px 17px -6px rgba(0,0,0,0.36);
+        box-shadow: 0px 4px 17px -6px rgba(0,0,0,0.36);
+        margin-bottom: 30px;
+        a{
+            color: $primary-color;
+            font-weight: 800;
+            font-size: 1.3rem;
+            transition: .3s;
+
+            &:hover {
+                transition: .3s;
+                transform: scale(1.1);
+                color: #282828;
+                
+            }
+        }
+    }
+}

@@ -7,7 +7,183 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
         integrity="sha256-/8+sU56ayrJGahG9mmcUaNEghbavaceGybkdqO96Kk0=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="_scss/style.css">
+    <style>
+        @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap");
+* {
+  font-family: 'Comfortaa';
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fbfbfb;
+}
+
+.pad-0 {
+  padding: 0;
+}
+
+.mar-0 {
+  margin: 0;
+}
+
+header {
+  -webkit-box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: #fff;
+}
+
+header .home {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #e6aeb8;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: inline-block;
+  line-height: 1.5rem;
+}
+
+header .home span {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 1.3rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .home:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #282828;
+}
+
+header .home:hover span {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: black;
+  font-size: 1.3rem;
+}
+
+main {
+  margin-top: 50px;
+}
+
+main h1 {
+  display: inline-block;
+  color: #e6aeb8;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+main h2 {
+  display: inline-block;
+  color: #e6aeb8;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+main .item-portfolio {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+main .item-portfolio .link-content {
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  /* A mágica está aqui */
+  padding-bottom: 100%;
+  /* ... e está aqui */
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  border-radius: 100%;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: inset 0 0 100px #000000;
+  box-shadow: inset 0 0 100px #000000;
+}
+
+main .item-portfolio .link-content .item-description {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 200px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .item-portfolio .link-content .item-description .row {
+  height: inherit;
+}
+
+main .item-portfolio .link-content:hover {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main .item-portfolio .link-content:hover .item-description {
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .spacer {
+  height: 50px;
+  width: 100%;
+  display: inline-block;
+}
+
+main .content-curriculum {
+  background-color: #fff;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: inline-block;
+  width: calc(100% - 70px);
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 4px 17px -6px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 4px 17px -6px rgba(0, 0, 0, 0.36);
+  margin-bottom: 30px;
+}
+
+main .content-curriculum a {
+  color: #e6aeb8;
+  font-weight: 800;
+  font-size: 1.3rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .content-curriculum a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #282828;
+}
+/*# sourceMappingURL=style.css.map */
+    </style>
     <title>Portfólio - Bruna Streng</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159208513-1"></script>
